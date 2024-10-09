@@ -1,0 +1,4 @@
+name: FelarmoniaDonate
+version: '1.0'
+main: online.slavok.felarmoniaDonate.FelarmoniaDonate
+api-version: '1.21'
