@@ -1,0 +1,20 @@
+whitelist-mysql-url: jdbc:mysql://localhost:3306/your_db_name
+auth-mysql-url: jdbc:mysql://localhost:3306/your_db_name
+meta-mysql-url: jdbc:mysql://localhost:3306/your_db_name
+bot-token: your_bot_token
+
+1-level:
+  permissions: []
+  group: "group_name"
+
+2-level:
+  permissions: []
+  group: "group_name"
+
+3-level:
+  permissions: []
+  group: "group_name"
+
+meta:
+  suffix_booster: " &d🔥"
+  suffix_steamer: " &5🎬"

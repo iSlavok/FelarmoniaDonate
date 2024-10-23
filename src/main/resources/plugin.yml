@@ -2,3 +2,51 @@ name: FelarmoniaDonate
 version: '1.0'
 main: online.slavok.felarmoniaDonate.FelarmoniaDonate
 api-version: '1.21'
+depend: [LuckPerms, PlaceholderAPI]
+commands:
+  donate:
+    description: Ban player
+    usage: /donate <type> <player> <amount>
+    permission: felarmonia.command.donate
+  death-notify:
+    description: On/off death-notify in discord
+    usage: /death-notify
+    permission: felarmonia.death-notify.access
+  fmeta:
+    description: Set metadata
+    usage: /fmeta reload/get/set/remove [<player>] [<key>] [<value>]
+    permission: felarmonia.command.meta
+  fclan:
+    description: Admin clan command
+    usage: /fclan create/delete <id> [<prefix>] [<owner>]
+    permission: felarmonia.command.clan.admin
+  clan:
+    description: Clan commands
+    usage: /clan add/remove <player> | /clan leave/list
+    permission: felarmonia.command.clan.player
+
+permissions:
+  felarmonia.command.donate:
+    description: Set donate to player
+    default: op
+  felarmonia.custom.join:
+    description: Custom join message
+    default: false
+  felarmonia.custom.leave:
+    description: Custom leave message
+    default: false
+  felarmonia.death-notify.access:
+    description: Death notify access
+    default: false
+  felarmonia.death-notify.enable:
+    description: Death notify enable
+    default: false
+  felarmonia.command.meta:
+    description: Set metadata
+    default: op
+  felarmonia.command.clan.admin:
+    description: Admin clan command
+    default: op
+  felarmonia.command.clan.player:
+    description: Clan commands
+    default: true
